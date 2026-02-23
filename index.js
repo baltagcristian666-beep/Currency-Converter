@@ -35,8 +35,6 @@ function init(){
     sDiv.append(frag)
 }
 
-init()
-render()
 
 function render(){
     let inpP = (Number(inp.value)>0) ? Number(inp.value) : 0
@@ -53,3 +51,5 @@ btn.addEventListener("click", function(){
     render()
 })
 
+init()
+render()
