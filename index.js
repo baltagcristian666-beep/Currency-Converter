@@ -13,6 +13,7 @@ const title = [
     "(LEU/GBP) in 2/23/2026",
     "(LEU/CNY) in 2/23/2026"
 ]
+// const start = performance.now()
 
 const sPs = []
 
@@ -33,6 +34,8 @@ function init(){
     frag.append(fDiv)
     }
     sDiv.append(frag)
+    // const end = performance.now()
+    // console.log(`Elemente afisate in ${end-start} milisec`)
 }
 
 
@@ -48,7 +51,14 @@ function render(){
     }
 
 btn.addEventListener("click", function(){
+    //const start = performance.now()
+
     render()
+
+//     requestAnimationFrame(() => {
+//     const end = performance.now();
+//     console.log(`render + repaint ~ ${(end - start).toFixed(3)} ms`);
+//   });
 })
 
 init()
